@@ -1,0 +1,112 @@
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Negative Harmony</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <div class = "title"> Negative Harmony Calculator </div>
+    <hr>
+    </hr>
+    <div class = "intro"> Hello. This is a small project that I've always wanted to do for a long time. This is basically a calculator where you are able to input notes and/or chords in a certain key and then use the calculator to find its negative harmony equivalent</div>
+    <div class = "keyc"><br></br>
+      What is the key center
+      <select action="index.html" method="post" id = "keyc" class = "chooseC">
+        <option value = "A"> A </option>
+        <option value = "Bb"> Bb </option>
+        <option value = "C"> C </option>
+        <option value = "C#"> C# </option>
+        <option value = "D"> D </option>
+        <option value = "Eb"> Eb </option>
+        <option value = "E"> E </option>
+        <option value = "F"> F </option>
+        <option value = "F#"> F# </option>
+        <option value = "G"> G </option>
+        <option value = "G#"> G# </option>
+      </select>
+      <div class = "note">*Key centers are the same for both major and minor keys (e.g. A major = A minor). So major or minor isn't specified
+        </div>
+    <div class = "chords" id = "chords">
+      <br></br>
+      Any chords
+      <select action = "index.html" method="post" id = "chordName">
+        <option value = "A">A</option>
+        <option value = "Bb">Bb</option>
+        <option value = "C">C</option>
+        <option value = "C#">C#</option>
+        <option value = "D">D</option>
+        <option value = "Eb">Eb</option>
+        <option value = "E">E</option>
+        <option value = "F">F</option>
+        <option value = "F#">F#</option>
+        <option value = "G">G</option>
+        <option value = "G#">G#</option>
+      </select>
+      <select action = "index.html" method="post" id = "chordType">
+        <option value = "Diminished">Diminished</option>
+        <option value = "Augmented"  >Augmented</option>
+        <option value = "Major">Major</option>
+        <option value = "Minor">Minor</option>
+        <option value = "Major 7th">Major 7th</option>
+        <option value = "Minor 7th">Minor 7th</option>
+        <option value = "Minor Major 7th">Minor Major 7th</option>
+        <option value = "Dominant 7th">Dominant 7th</option>
+      </select>
+      <select class = "extension1" id = "extension1" hidden>
+        <option value = "b9">b9</option>
+        <option value = "9">9</option>
+        <option value = "#9">#9</option>
+        <option value = "11">11</option>
+        <option value = "#11">#11</option>
+        <option value = "b13">b13</option>
+        <option value = "13">13</option>
+      </select>
+      <select class = "extension2" id = "extension2" hidden>
+        <option value = "b9">b9</option>
+        <option value = "9">9</option>
+        <option value = "#9">#9</option>
+        <option value = "11">11</option>
+        <option value = "#11">#11</option>
+        <option value = "b13">b13</option>
+        <option value = "13">13</option>
+      </select>
+      <select class = "extension3" id = "extension3" hidden>
+        <option value = "b9">b9</option>
+        <option value = "9">9</option>
+        <option value = "#9">#9</option>
+        <option value = "11">11</option>
+        <option value = "#11">#11</option>
+        <option value = "b13">b13</option>
+        <option value = "13">13</option>
+      </select>
+      <select class = "extension4" id = "extension4" hidden>
+        <option value = "b9">b9</option>
+        <option value = "9">9</option>
+        <option value = "#9">#9</option>
+        <option value = "11">11</option>
+        <option value = "#11">#11</option>
+        <option value = "b13">b13</option>
+        <option value = "13">13</option>
+      </select>
+      <select class = "extension5" id = "extension5" hidden>
+        <option value = "b9">b9</option>
+        <option value = "9">9</option>
+        <option value = "#9">#9</option>
+        <option value = "11">11</option>
+        <option value = "#11">#11</option>
+        <option value = "b13">b13</option>
+        <option value = "13">13</option>
+      </select>
+      <button onclick="insertExtension()" id="extBtn" class= "button">Add Extensions</button>
+      <button onclick="removeExtension()" id="remBtn" class = "button" hidden >Remove Extensions</button>
+      </div>
+      <div class = "chord-preview"  id = "chordP"></div>
+      <hr></hr>
+      <button onclick="flip()" class = "button">Flip da joint</button>
+      <div id = "answer">
+
+        </div>
+      <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

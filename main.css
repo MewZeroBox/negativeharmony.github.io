@@ -1,0 +1,57 @@
+/*Grain: #D7CEC7
+  Blackboard: #565656
+  Oxblood: #76323F
+  Tan: C09F80
+
+*/
+body {
+background-color: #D7CEC7
+
+
+}
+.title {
+  text-align: center;
+  font-size: 60px;
+  font-family: sans-serif;
+  color: #76323F
+}
+.intro {
+  font-size: 20px;
+  font-family: sans-serif;
+  color:#565656;
+}
+.note{
+  font-size: 12px;
+  color: #565656;
+
+}
+.keyc{
+  color:#565656;
+  font-family:sans-serif;
+
+}
+select{
+  border-radius: 5px;
+  color: #565656;
+
+}
+select{
+  background-color: #d4beaa;
+  border-color: #565656;
+
+
+}
+.chord-preview{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.button {
+  border-radius: 5px;
+  background-color: #c09f80;
+}
+.button:hover{
+  background-color: #d4beaa;
+}
+.button:active{
+  background-color: #896543;
+}
